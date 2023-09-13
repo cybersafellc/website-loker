@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&family=Source+Sans+3&display=swap");
+
+* {
+  font-family: "Source Sans 3", sans-serif;
+}
+img {
+  width: 100%;
+}
+.Name-loker {
+  font-size: 19px;
+  color: rgb(0, 119, 255);
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-loker {
+  width: 100%;
+  height: 250px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.wraper-underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Name-loker:hover {
+  color: red;
+}
+.container {
+  position: relative;
+}
+.card:hover {
+  cursor: pointer;
+}
+
+.wrapper-view-card {
+  height: 100vh;
+  position: relative;
+}
+
+.card-view-loker {
+  width: 739px;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+}
+@media screen and (max-width: 1200px) {
+  .card-view-loker {
+    width: 532px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 992px) {
+  .card-view-loker {
+    width: 100%;
+    left: 0px;
+  }
+  .wrapper-view-card {
+    display: none !important;
+  }
+}
+.z-index-1 {
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.page-loker {
+  padding-top: 100px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-whitesmoke {
+  background-color: whitesmoke;
+}
+.content-wrapper {
+  overflow: scroll !important;
+  height: 80vh;
+}
+
+/* riset */
+.nice-riset {
+  position: fixed;
+  right: 0px;
+  width: 10%;
+  height: 100vh;
+  overflow: scroll;
 }
