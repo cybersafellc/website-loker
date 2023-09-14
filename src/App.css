@@ -55,6 +55,9 @@ img {
   .wrapper-view-card {
     display: none !important;
   }
+  .carousel-indicators {
+    display: none !important;
+  }
 }
 .z-index-1 {
   z-index: 1;
@@ -79,4 +82,28 @@ img {
   width: 10%;
   height: 100vh;
   overflow: scroll;
+}
+
+.max-width-overview {
+  max-width: 500px !important;
+}
+
+.humberger-menu {
+  width: 30px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.humberger-menu > span {
+  width: 100%;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.711);
+  border-radius: 20px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none !important;
 }

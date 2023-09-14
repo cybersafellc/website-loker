@@ -12,22 +12,23 @@ const Homes = () => {
   const Navigate = useNavigate(null);
   const handleCardOverview = (index) => {
     localStorage.setItem("lokerwhat", index);
+    localStorage.setItem("fromParam", "/");
     Navigate("/website-loker/overview");
   };
 
   return (
     <>
       <Navbars />
-      <section className="py-5">
+      <section className="py-3 py-lg-5">
         <Container>
           <Carosels
-            img1="https://via.placeholder.com/900x400"
-            img2="https://via.placeholder.com/900x400"
-            img3="https://via.placeholder.com/900x400"
+            img1="https://via.placeholder.com/900x600"
+            img2="https://via.placeholder.com/900x600"
+            img3="https://via.placeholder.com/900x600"
           />
         </Container>
       </section>
-      <section className="py-5">
+      <section className="py-3 py-lg-5">
         <Container>
           <Row className="g-4">
             <Col xs="12">

@@ -10,12 +10,21 @@ const Navbars = (props) => {
         className={`bg-body-tertiary shadow py-2 ${props.position}`}
       >
         <Container>
-          <Navbar.Brand href="#home" className="fw-bold fs-4">
+          <Navbar.Brand href="#home" className="fw-bold fs-4 ">
             CARIJOB<span className="text-danger">BENGKALIS</span>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            className="border-0 focus-ring focus-ring-light"
+          >
+            <div className="humberger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto d-flex align-items-center gap-4">
+            <Nav className="ms-auto d-flex align-items-center gap-0 gap-lg-4 p-4 p-lg-0">
               <Nav.Link
                 href="#home"
                 onClick={() => Navigate("/website-loker/")}

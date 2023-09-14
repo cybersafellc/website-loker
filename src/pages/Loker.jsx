@@ -4,6 +4,7 @@ import { Container, Row, Col, Card, Button, Image } from "react-bootstrap";
 import { useContext, useEffect, useState } from "react";
 import { Contex } from "../context/databaseContex";
 import { useNavigate } from "react-router-dom";
+import Footers from "../component/Footers";
 
 const Loker = () => {
   const { dataAll } = useContext(Contex);
@@ -15,6 +16,7 @@ const Loker = () => {
     if (window.innerWidth > 992) {
       setTampilkanData(true);
     } else {
+      localStorage.setItem("fromParam", "loker");
       localStorage.setItem("lokerwhat", index);
       Navigate("/website-loker/overview");
     }
