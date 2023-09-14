@@ -16,7 +16,7 @@ const Loker = () => {
       setTampilkanData(true);
     } else {
       localStorage.setItem("lokerwhat", index);
-      Navigate("/overview");
+      Navigate("/website-loker/overview");
     }
   };
   const handleClose = () => {

@@ -16,10 +16,16 @@ const Navbars = (props) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto d-flex align-items-center gap-4">
-              <Nav.Link href="#home" onClick={() => Navigate("/")}>
+              <Nav.Link
+                href="#home"
+                onClick={() => Navigate("/website-loker/")}
+              >
                 Beranda
               </Nav.Link>
-              <Nav.Link href="#link" onClick={() => Navigate("/loker")}>
+              <Nav.Link
+                href="#link"
+                onClick={() => Navigate("/website-loker/loker")}
+              >
                 Loker
               </Nav.Link>
               <Nav.Link href="#link">Tentang Kami</Nav.Link>

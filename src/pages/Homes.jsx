@@ -5,9 +5,15 @@ import Carosels from "../component/Carosels";
 import { Container, Row, Col } from "react-bootstrap";
 import CardLoker from "../component/CardLoker";
 import Footers from "../component/Footers";
+import { useNavigate } from "react-router-dom";
 
 const Homes = () => {
   const { dataAll } = useContext(Contex);
+  const Navigate = useNavigate(null);
+  const handleCardOverview = (index) => {
+    localStorage.setItem("lokerwhat", index);
+    Navigate("/website-loker/overview");
+  };
 
   return (
     <>
@@ -27,9 +33,10 @@ const Homes = () => {
             <Col xs="12">
               <h3 className="fw-bold">Loker Terbaru</h3>
             </Col>
-            {dataAll.map((item) => (
+            {dataAll.map((item, index) => (
               <Col md="4">
                 <CardLoker
+                  onClick={() => handleCardOverview(index)}
                   img={item.data.img}
                   title={item.data.title}
                   company={item.data.company}

@@ -17,7 +17,7 @@ const OverviewLocker = () => {
     window.location.href = `https://wa.me/62${p}`;
   };
   const handleClose = () => {
-    Navigate("/loker");
+    Navigate("/website-loker/loker");
   };
   return (
     <>
