@@ -13,10 +13,13 @@ const App = () => {
       <Providers>
         <Router>
           <Routes>
-            <Route path="/" element={<Homes />} />
-            <Route path="/loker" element={<Loker />} />
-            <Route path="riset" element={<Riset />} />
-            <Route path="overview" element={<OverviewLocker />} />
+            <Route path="/website-loker/" element={<Homes />} />
+            <Route path="/website-loker/loker" element={<Loker />} />
+            <Route path="/website-loker/riset" element={<Riset />} />
+            <Route
+              path="/website-loker/overview"
+              element={<OverviewLocker />}
+            />
           </Routes>
         </Router>
       </Providers>
